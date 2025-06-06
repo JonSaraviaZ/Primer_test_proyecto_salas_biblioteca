@@ -79,7 +79,7 @@ public class DataLoader implements CommandLineRunner {
             List<Estudiante> estudiantes = estudianteRepository.findAll();
             List<Sala> salas = salaRepository.findAll();
             
-        // Generar reservas
+        // Generar reservas.
         for (int i = 0; i < 20; i++) {
             Reserva reserva = new Reserva();
             reserva.setEstudiante(estudiantes.get(random.nextInt(estudiantes.size())));
